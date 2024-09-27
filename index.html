@@ -1,14 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Line Paribahan</title>
 
     <!-- Tailwind CSS and Daisy UI CDN. -->
-     
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- Add Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        .raleway-font {
+            font-family: "Raleway", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        .inter-font {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <nav class="container mx-auto my-[30px] lg:px-[150px] raleway-font">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost text-[32px] font-extrabold">E-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a
+                        class="hidden md:flex btn text-[#1DD100] items-center bg-[#1DD1001A]/10 border border-[#1DD100]/40 rounded-[12px]">
+                        Bus
+                        <img src="./images/bus-icon.png" alt="" class="text-[#1DD100]">
+                    </a>
+
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="md:relative">
+            <div class="container mx-auto px-5 lg:px-0">
+                <div class="bg-no-repeat w-full lg:w-[1171px] h-[550px] bg-gradient-to-b from-gray-950 to-gray-950 rounded-[32px] 
+            mx-auto flex flex-col justify-center items-center gap-8 lg:gap-5"
+                    style="background-image: url(./images/banner.png);">
+                    <h2
+                        class="text-white text-[30px] lg:text-[50px] raleway-font font-extrabold text-center md:px-[180px]">
+                        End-to-End Travel with
+                        <span class="text-[#1DD100]">Greenline Paribahan</span>
+                    </h2>
+                    <p class="text-white inter-font md:px-[300px] text-center font-[300px]">Yes, you can run unit tests
+                        and view the results directly within the app. The
+                        integrated testing
+                        features allow for a streamlined .</p>
+                    <button class="btn bg-[#1DD100] raleway-font rounded-[12px] text-black font-bold border-none">Buy
+                        Tickets</button>
+                </div>
+            </div>
+
+
+            <!-- Cards. -->
+            <div class="inter-font  my-[30px] lg:my-0 mx-auto px-5 lg:px-[150px] flex justify-center flex-col md:flex-row gap-[24px] md:absolute md:-bottom-14">
+                <div
+                    class="w-full md:w-[308px] bg-white rounded-3xl border-b-2 border-[#1dd100] flex items-center gap-5 px-[40px] py-[32px]">
+                    <img src="./images/people.png" alt="" class="w-16 h-16">
+                    <div class="">
+                        <h3 class="text-[36px] font-bold">500K+</h3>
+                        <p class="text-[#03071299]/60">Registered users</p>
+                    </div>
+                </div>
+                <div
+                    class="w-full md:w-[308px] bg-white rounded-3xl border-b-2 border-[#1dd100] flex items-center gap-5 px-[40px] py-[32px]">
+                    <img src="./images/ticket-cupon.png" alt="" class="w-16 h-16">
+                    <div class="">
+                        <h3 class="text-[36px] font-bold">1.7 lacks</h3>
+                        <p class="text-[#03071299]/60">Tickets sold</p>
+                    </div>
+                </div>
+                <div
+                    class="w-full md:w-[308px] bg-white rounded-3xl border-b-2 border-[#1dd100] flex items-center gap-5 px-[40px] py-[32px]">
+                    <img src="./images/stoppage.png" alt="" class="w-16 h-16">
+                    <div class="">
+                        <h3 class="text-[36px] font-bold">80K+</h3>
+                        <p class="text-[#03071299]/60">Rental partners</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
 </body>
+
 </html>
