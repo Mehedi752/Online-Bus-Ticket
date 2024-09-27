@@ -81,8 +81,8 @@
             </div>
         </nav>
 
-        <div class="md:relative">
-            <div class="container mx-auto px-5 lg:px-0">
+        <div class="container mx-auto">
+            <div class="px-5 lg:px-0">
                 <div class="bg-no-repeat w-full lg:w-[1171px] h-[550px] bg-gradient-to-b from-gray-950 to-gray-950 rounded-[32px] 
             mx-auto flex flex-col justify-center items-center gap-8 lg:gap-5"
                     style="background-image: url(./images/banner.png);">
@@ -102,9 +102,10 @@
 
 
             <!-- Cards. -->
-            <div class="inter-font  my-[30px] lg:my-0 mx-auto px-5 lg:px-[150px] flex justify-center flex-col md:flex-row gap-[24px] md:absolute md:-bottom-14">
+            <div
+                class="inter-font my-[30px] mx-auto px-5 lg:px-[150px] flex justify-center flex-col md:flex-row gap-[24px] ">
                 <div
-                    class="w-full md:w-[308px] bg-white rounded-3xl border-b-2 border-[#1dd100] flex items-center gap-5 px-[40px] py-[32px]">
+                    class="w-full md:w-[308px] bg-white rounded-3xl border-2 border-[#1dd100] flex items-center gap-5 px-[40px] py-[32px]">
                     <img src="./images/people.png" alt="" class="w-16 h-16">
                     <div class="">
                         <h3 class="text-[36px] font-bold">500K+</h3>
@@ -112,7 +113,7 @@
                     </div>
                 </div>
                 <div
-                    class="w-full md:w-[308px] bg-white rounded-3xl border-b-2 border-[#1dd100] flex items-center gap-5 px-[40px] py-[32px]">
+                    class="w-full md:w-[308px] bg-white rounded-3xl border-2 border-[#1dd100] flex items-center gap-5 px-[40px] py-[32px]">
                     <img src="./images/ticket-cupon.png" alt="" class="w-16 h-16">
                     <div class="">
                         <h3 class="text-[36px] font-bold">1.7 lacks</h3>
@@ -120,7 +121,7 @@
                     </div>
                 </div>
                 <div
-                    class="w-full md:w-[308px] bg-white rounded-3xl border-b-2 border-[#1dd100] flex items-center gap-5 px-[40px] py-[32px]">
+                    class="w-full md:w-[308px] bg-white rounded-3xl border-2 border-[#1dd100] flex items-center gap-5 px-[40px] py-[32px]">
                     <img src="./images/stoppage.png" alt="" class="w-16 h-16">
                     <div class="">
                         <h3 class="text-[36px] font-bold">80K+</h3>
@@ -130,6 +131,58 @@
             </div>
         </div>
     </header>
+
+    <main class="container mx-auto mt-[50px]">
+
+        <!-- Coupon Part. -->
+        <section class="px-5 lg:px-[150px]">
+            <h3 class="text-center text-[40px] font-bold">Best offers for you</h3>
+
+            <div class="flex flex-col lg:flex-row lg:justify-center gap-6">
+
+                <div class="bg-[#FFBF0F] rounded-[24px] inter-font w-full lg:w-[573px] h-full lg:h-[220px] flex flex-col items-center lg:flex-row my-8">
+                    <div class="p-[52px] border-b-2 border-dashed border-black lg:border-none">
+                        <span class="text-gray-950/80 text-[40px] font-black leading-9">15%
+                            OFF<br /></span>
+                        <span class="text-gray-950/80 font-semibold  leading-9">on
+                            your next purchase<br /></span>
+                        <span class="text-gray-950/50 text-lg font-medium leading-9">use
+                            by January 2024</span>
+                    </div>
+                    <img src="./images/cupon-devider.png" alt="" class="hidden lg:block">
+                    <div class="p-[52px] raleway-font">
+                        <span class="text-gray-950 text-[32px] font-bold font-['Raleway'] leading-[57.60px]">NEW15<br />
+                        </span>
+                        <span class="text-gray-950/40 font-medium leading-9">Coupon Code
+                        </span>
+                    </div>
+                </div>
+
+                <div class="bg-[#F78C9C] rounded-[24px] inter-font  w-full lg:w-[573px] h-full lg:h-[220px] flex flex-col items-center lg:flex-row my-8">
+                    <div class="p-[40px] border-b-2 border-dashed border-black lg:border-none">
+                        <span class="text-gray-950/80 text-[40px] font-black leading-9">20% OFF<br /></span>
+                        <span class="text-gray-950/80 font-semibold  leading-9">on
+                            your next purchase<br /></span>
+                        <span class="text-gray-950/50 text-lg font-medium leading-9">use
+                            by January 2024</span>
+                    </div>
+                    <img src="./images/cupon-devider.png" alt="" class="hidden lg:block">
+                    <div class="p-[52px] raleway-font">
+                        <span class="text-gray-950 text-[32px] font-bold font-['Raleway'] leading-[57.60px]">Couple 20 <br/>
+                        </span>
+                        <span class="text-gray-950/40 font-medium leading-9">Coupon Code
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="h-[65px] w-[200px] btn bg-white px-[30px] py-[21px] rounded-xl border border-[#1dd100] flex justify-center mx-auto">
+                <button class=" text-center text-[#1dd100] text-xl font-bold raleway-font">See All Offers</button>
+            </div>
+        </section>
+
+    </main>
 
 </body>
 
