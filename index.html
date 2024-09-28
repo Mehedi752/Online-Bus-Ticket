@@ -432,8 +432,98 @@
 
                     <div class="pl-8 w-2/5">
                         <h3 class="text-gray-950 text-2xl font-semibold raleway-font mb-6">Select Your Seat</h3>
+                        <div class="border-b-2 border-dashed mb-6"></div>
 
-                        <div class="border-t-2 border-dashed py-4"></div>
+                        <!-- Confirm Tickets. -->
+                        <div class="bg-[#F7F8F8] p-8 rounded-xl">
+
+                            <div class="flex justify-between pb-4 border-b-2 border-dashed">
+                                <div class="flex">
+                                    <p class="text-gray-950 text-base font-medium inter-font">Seat</p>
+                                    <button
+                                        class="bg-[#1DD100] w-4 h-4 p-2 rounded-full text-sm flex justify-center items-center font-bold inter-font text-white">0</button>
+                                </div>
+                                <h3 class="text-gray-950 text-base font-medium inter-font">Class</h3>
+                                <h3 class="text-gray-950 text-base font-medium inter-font">Price</h3>
+                            </div>
+
+                            <div class="py-4 border-b-2 border-dashed">
+                                <ul class="">
+                                    <h3 class="text-gray-950/60 text-base inter-font text-center">No Seat Booked at This
+                                        Moment.</h3>
+                                </ul>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b-2 border-dashed">
+                                <h3 class="text-gray-950 text-base font-medium inter-font">Total Price</h3>
+                                <p class="text-gray-950 text-base font-medium inter-font">BDT : **** </p>
+                            </div>
+
+                            <div class="py-4 flex justify-between items-center gap-2 border-b-2 border-dashed">
+                                <input type="text" disabled class="input w-full" placeholder="Have any Coupon?">
+                                <button disabled class="btn bg-[#1DD100] text-white font-bold px-5">Apply</button>
+                            </div>
+
+                            <div class="flex justify-between pt-4">
+                                <h3 class="text-gray-950 text-base font-medium inter-font">Grand Total</h3>
+                                <p class="text-gray-950 text-base font-medium inter-font">BDT : **** </p>
+                            </div>
+
+                        </div>
+
+                        <!-- Form Part. -->
+                        <div class="mt-6">
+                            <label class="form-control w-full">
+                                <div class="label">
+                                    <span class="label-text text-gray-950 text-base font-semibold inter-font">Passenger
+                                        Name*</span>
+                                </div>
+                                <input type="text" placeholder="Enter Your Full Name"
+                                    class="input input-bordered w-full p-6" />
+                            </label>
+                            <label class="form-control w-full mt-3">
+                                <div class="label">
+                                    <span class="label-text text-gray-950 text-base font-semibold inter-font">Phone
+                                        Number*</span>
+                                </div>
+                                <input type="number" placeholder="Enter Your Phone Number"
+                                    class="input input-bordered w-full p-6" />
+                            </label>
+                            <label class="form-control w-full mt-3">
+                                <div class="label">
+                                    <span class="label-text text-gray-950 text-base font-semibold inter-font">Email
+                                        ID*</span>
+                                </div>
+                                <input type="email" placeholder="Enter Your Email Address"
+                                    class="input input-bordered w-full p-6" />
+                            </label>
+
+                            <button onclick="my_modal_1.showModal()"" class=" btn mt-6 w-full bg-[#1DD100] text-white
+                                font-bold text-xl">Next</button>
+
+                            <div class="flex justify-around mt-6">
+                                <a href="#" class="text-gray-950/60 text-base font-normal inter-font underline">Terms and Conditions</a>
+                                <a href="#" class="text-gray-950/60 text-base font-normal inter-font underline">Cancellation Policy</a>
+                            </div>
+                        </div>
+
+
+                        <!-- Add Modal. -->
+                        <dialog id="my_modal_1" class="modal">
+                            <div class="modal-box flex flex-col justify-center items-center p-10">
+                                <img src="./images/success.png" alt="" class="w-[80px] h-[75px] mb-4">
+                                <h3 class="text-[#1DD100] text-xl font-bold inter-font mb-4">SUCCESS</h3>
+                                <h4 class="text-center text-[#4a494a] font-medium">Thank you for Booking Our Bus Seats. We are working hard to find the best
+                                    service and deals for you.</h4>
+                                <p class="text-[#4a494a]/60">Shortly you will get a confirmation in your email.</p>
+                                <div class="modal-action">
+                                    <form method="dialog">
+                                        <button class="btn bg-[#1DD100] w-[300px] rounded-[32px] text-white text-xl font-semibold">Continue</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+
                     </div>
                 </div>
 
