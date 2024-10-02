@@ -58,12 +58,12 @@ function ticketButton(event) {
      <li class = "text-gray-950/60 text-base inter-font flex justify-between"> 
      <p> ${seatNumber} </p>
      <p> Business </p>
-     <p> 1500 </p>
+     <p> 1300 </p>
      </li>
     `
 
     // Update the Total Price.
-    totalPrice += 1500;
+    totalPrice += 1300;
     document.getElementById('total-price').innerText = totalPrice.toFixed(2);
 
 
