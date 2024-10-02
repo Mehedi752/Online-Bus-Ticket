@@ -17,11 +17,11 @@
 
 <h2 id="technologies" style="font-weight: bolder;">💻Skill Used</h2>
 Frontend: <br> <br>
-- HTML, <img width='20' src='https://i.ibb.co/0nM8BvN/html.png'/>
-- Tailwind CSS <img width='20' src='https://i.ibb.co/YQgZTgT/css.png'/>
-- DaisyUI https://raw.githubusercontent.com/saadeghi/daisyui-images/master/images/daisyui-logo/favicon-192.png
-- Google Font https://cdn-1.webcatalog.io/catalog/google-fonts/google-fonts-social-preview.png?v=1714773199966
-- JavaScript <img width='20' src='https://i.ibb.co/g41kf3h/javascript.png'/> 
+- HTML <br>
+- Tailwind CSS <br>
+- Daisy UI <br>
+- Google Font <br>
+- JavaScript DOM <br>
 
 
 
